@@ -11,7 +11,7 @@ function App() {
           <h1>DICTIONARY</h1>
         </header>
         <main>
-          <Dictionary />
+          <Dictionary defaultKeyword="Knowledge" />
         </main>
         <footer className="App-footer">
           <small>This project was coded by Ishani Morgan</small>
