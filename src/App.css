@@ -1,6 +1,8 @@
 .App {
   font-size: 14px;
   font-family: "Playfair Display", serif;
+  max-width: 850px;
+  margin: 0 auto;
 }
 
 .App-header {
