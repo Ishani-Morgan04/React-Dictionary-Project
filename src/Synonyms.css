@@ -1,5 +1,7 @@
 .Synonyms li {
   display: inline-block;
   list-style: none;
-  padding-right: 16px;
+  padding-top: 20px;
+  padding-right: 50px;
+  font-size: 18px;
 }

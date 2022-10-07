@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import axios from "axios";
 import Results from "./Results";
 import Photos from "./Photos";
-
 import "./Dictionary.css";
 
 export default function Dictionary(props) {
@@ -10,6 +9,7 @@ export default function Dictionary(props) {
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
+  let [selected, setSelected] = useState(undefined);
 
   function handleDictionaryResponse(response) {
     setResults(response.data[0]);
@@ -32,12 +32,18 @@ export default function Dictionary(props) {
   }
   function handleSubmit(event) {
     event.preventDefault();
-    search();
+    if (keyword.length > 0) {
+      search();
+      setSelected(undefined);
+    } else {
+      alert("Please enter a word 🤖.");
+    }
   }
 
   function handleKeywordChange(event) {
     setKeyword(event.target.value);
   }
+
   function load() {
     setLoaded(true);
     search();
@@ -49,12 +55,20 @@ export default function Dictionary(props) {
         <section>
           <h2>What word would you like to search?</h2>
           <form onSubmit={handleSubmit}>
-            <input
-              type="search"
-              auyoFocus={true}
-              onChange={handleKeywordChange}
-              defaultValue={props.defaultKeyword}
-            />
+            <div className="row">
+              <div className="col-10">
+                <input
+                  type="search"
+                  autoFocus={true}
+                  onChange={handleKeywordChange}
+                  defaultValue={props.defaultKeyword}
+                />
+              </div>
+
+              <div className="col-2">
+                <input type="submit" value="Search" className="btn w-100" />
+              </div>
+            </div>
           </form>
         </section>
         <Results results={results} />
@@ -63,6 +77,7 @@ export default function Dictionary(props) {
     );
   } else {
     load();
+    selected();
     return "Loading....";
   }
 }

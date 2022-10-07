@@ -6,7 +6,7 @@
   background-color: rgb(212, 250, 252);
   padding: 30px;
   border-radius: 16px;
-  box-shadow: 0px 10px 10px rgb(187, 188, 188);
+  box-shadow: 0px 3px 5px rgb(241, 211, 13);
   margin: 20px 0;
 }
 
@@ -23,4 +23,24 @@
   padding: 20px 10px;
   border: 1px solid turquoise;
   color: #333;
+}
+
+.Dictionary .btn {
+  text-align: center;
+  line-height: 0;
+  border: 2px solid rgb(72, 207, 205);
+  padding-top: 18px;
+  padding-bottom: 20px;
+  background-color: rgb(241, 211, 13);
+  color: black;
+  margin: 0 auto;
+  font-weight: bolder;
+}
+
+.Dictionary .btn:hover {
+  color: white;
+  border: 2px solid rgb(241, 211, 13);
+  background-color: rgb(72, 207, 205);
+  transition: all 0.3s;
+  font-weight: bolder;
 }

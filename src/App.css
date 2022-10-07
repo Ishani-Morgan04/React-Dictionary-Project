@@ -1,7 +1,7 @@
 .App {
   font-size: 14px;
-  font-family: "Playfair Display", serif;
-  max-width: 850px;
+  font-family: "Poppins", sans-serif;
+  max-width: 950px;
   margin: 0 auto;
 }
 
@@ -10,15 +10,15 @@
 }
 
 .App-logo {
-  max-width: 200px;
+  max-width: 230px;
   display: block;
   margin: 0 auto;
 }
 
 .App h1 {
   text-align: center;
-  font-weight: bold;
-  font-size: 34px;
+  font-weight: bolder;
+  font-size: 36px;
 }
 
 .App-footer {

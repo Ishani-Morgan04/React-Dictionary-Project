@@ -11,10 +11,15 @@ function App() {
           <h1>DICTIONARY</h1>
         </header>
         <main>
-          <Dictionary defaultKeyword="Knowledge" />
+          <Dictionary defaultKeyword="Sky" />
         </main>
         <footer className="App-footer">
-          <small>This project was coded by Ishani Morgan</small>
+          <small>
+            This project is coded by Ishani Morgan and it is open source on{" "}
+          </small>
+          <a href="https://github.com/Ishani-Morgan04/React-Dictionary-Project">
+            GitHub.
+          </a>
         </footer>
       </div>
     </div>

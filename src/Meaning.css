@@ -6,12 +6,15 @@
 }
 
 .Meaning .definition {
+  font-size: 18px;
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .Meaning .example {
-  font-size: 13px;
-  color: #70757a;
+  font-size: 16px;
+  color: #0e4175;
   font-style: italic;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  margin-top: -10px;
 }
