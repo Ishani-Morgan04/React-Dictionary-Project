@@ -9,7 +9,6 @@ export default function Dictionary(props) {
   let [results, setResults] = useState(null);
   let [loaded, setLoaded] = useState(false);
   let [photos, setPhotos] = useState(null);
-  let [selected, setSelected] = useState(undefined);
 
   function handleDictionaryResponse(response) {
     setResults(response.data[0]);
@@ -34,7 +33,6 @@ export default function Dictionary(props) {
     event.preventDefault();
     if (keyword.length > 0) {
       search();
-      setSelected(undefined);
     } else {
       alert("Please enter a word 🤖.");
     }
@@ -77,7 +75,6 @@ export default function Dictionary(props) {
     );
   } else {
     load();
-    selected();
     return "Loading....";
   }
 }

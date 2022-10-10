@@ -5,6 +5,7 @@ import ReactAudioPlayer from "react-audio-player";
 export default function Phonetic(props) {
   return (
     <div className="Phonetic">
+      <br />
       <div className="row">
         <div className="audio-player col-9">
           <ReactAudioPlayer

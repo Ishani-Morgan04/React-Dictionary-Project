@@ -1,7 +1,7 @@
 .App {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
-  max-width: 950px;
+  max-width: 980px;
   margin: 0 auto;
 }
 
@@ -19,6 +19,7 @@
   text-align: center;
   font-weight: bolder;
   font-size: 36px;
+  word-spacing: 3px;
 }
 
 .App-footer {
